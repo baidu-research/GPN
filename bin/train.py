@@ -32,10 +32,10 @@ parser.add_argument('cfg_path', default=None, metavar='CFG_PATH', type=str,
                     help='Path to the config file in json format')
 parser.add_argument('save_path', default=None, metavar='SAVE_PATH', type=str,
                     help='Path to the saved models')
-parser.add_argument('--num_workers', default=1, type=int, help='''Number of
-                    workers for each data loader''')
-parser.add_argument('--resume', default=0, type=int, help='''If resume from
-                    previous run''')
+parser.add_argument('--num_workers', default=1, type=int, help='Number of'
+                    ' workers for each data loader, default 1')
+parser.add_argument('--resume', default=0, type=int, help='If resume from'
+                    ' previous run, default 0')
 
 
 def train_epoch(summary, summary_writer, cfg, model, optimizer, dataloader):

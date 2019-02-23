@@ -26,12 +26,12 @@ from model.ellipse_transform import ellipse_overlaps  # noqa
 parser = argparse.ArgumentParser(description='Test model')
 parser.add_argument('save_path', default=None, metavar='SAVE_PATH', type=str,
                     help='Path to the saved models')
-parser.add_argument('--num_workers', default=1, type=int, help='''Number of
-                    workers for each data loader''')
-parser.add_argument('--iou_thred', default=0.5, type=float, help='''IoU
-                    threshold''')
+parser.add_argument('--num_workers', default=1, type=int, help='Number of'
+                    ' workers for each data loader, default 1')
+parser.add_argument('--iou_thred', default=0.5, type=float, help='IoU'
+                    ' threshold, default 0.5')
 parser.add_argument('--fps_img', default='0.5,1,2,4,8,16', type=str,
-                    help='''False positives per image''')
+                    help='False positives per image, default 0.5,1,2,4,8,16')
 
 
 def run(args):
