@@ -114,7 +114,7 @@ where `/CFG_PATH/` is the path to the config file in json format, and `/SAVE_PAT
 ```
 Please modify `/DEEPLESION_PATH/` to your own path of downloaded DeepLesion dataset.
 
-By default, `train.py` use 1 GPU (GPU_0) to train model, 2 processes for load tumor patch images, and 1 processes to load normal patch images. On one GTX 1080Ti, it took about 12 hours to finish 20 epoches. You can also use tensorboard to monitor the training process
+By default, `train.py` use 1 GPU (GPU_0) to train model, 1 processes to load images. On one GTX 1080Ti, it took about 12 hours to finish 20 epoches. You can also use tensorboard to monitor the training process
 ```
 tensorboard --logdir /SAVE_PATH/
 ```
