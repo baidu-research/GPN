@@ -1,35 +1,20 @@
 ![Baidu Logo](/doc/baidu-research-logo-small.png)
 
-- [NCRF](#ncrf)
+- [GPN](#ncrf)
 - [Prerequisites](#prerequisites)
 - [Data](#data)
-    - [Whole slide images](#whole-slide-images)
-    - [Annotations](#annotations)
-    - [Patch images](#patch-images)
 - [Model](#model)
 - [Training](#training)
 - [Testing](#testing)
     - [Tissue mask](#tissue-mask)
-    - [Probability map](#probability-map)
-    - [Tumor localization](#tumor-localization)
-    - [FROC evaluation](#froc-evaluation)
 
 
-# NCRF
+# GPN
 This repository contains the code and data to reproduce the main results from the paper:
 
-[Yi Li and Wei Ping. Cancer Metastasis Detection With Neural Conditional Random Field. Medical Imaging with Deep Learning (MIDL), 2018.](https://openreview.net/forum?id=S1aY66iiM)
+[Yi Li. Detecting Lesion Bounding Ellipses With Gaussian Proposal Networks, 2018.]()
 
-If you find the code/data is useful, please cite the above paper:
-
-    @inproceedings{li2018cancer,
-        title={Cancer Metastasis Detection With Neural Conditional Random Field},
-        booktitle={Medical Imaging with Deep Learning},
-        author={Li, Yi and Ping, Wei},
-        year={2018}
-    }
-
-If you have any quesions, please post it on github issues or email at liyi17@baidu.com, yil8@uci.edu
+If you find the code/data is useful, please cite the above paper. If you have any quesions, please post it on github issues or email at liyi17@baidu.com, yil8@uci.edu
 
 
 # Prerequisites
@@ -47,13 +32,13 @@ If you have any quesions, please post it on github issues or email at liyi17@bai
 
 * scikit-image (0.13.1)
 
-* [OpenSlide 3.4.1](https://openslide.org/)(Please don't use 3.4.0 as some potential issues found on this version)/[openslide-python (1.1.0)](https://github.com/openslide/openslide-python)
-
 * matplotlib (2.2.2)
 
-* [tensorboardX](https://github.com/lanpa/tensorboard-pytorch) Standard along tensorboard that also works for PyTorch. This is mostly used in monitoring the training curves.
+* opencv (3.4.3.18)
 
-* [QuPath](https://qupath.github.io/) Although not directly relevant to training/testing models, I found it very useful to visualize the whole slide images.
+* Cython (0.29.5)
+
+* [tensorboardX](https://github.com/lanpa/tensorboard-pytorch) Standard along tensorboard that also works for PyTorch. This is mostly used in monitoring the training curves.
 
 Most of the dependencies can be installed through pip install with version number, e.g. 
 ```
