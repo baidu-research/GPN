@@ -121,7 +121,7 @@ tensorboard --logdir /SAVE_PATH/
 ![training_acc](/doc/training_FROC.png)
 Typically, you will observe the GPN model with KL-divergence loss achieves higher training FROC than the RPN model with SmoothedL1 loss.
 
-`train.py` will generate a `train.ckpt`, which is the most recently saved model, and a `best.ckpt`, which is the model with the best validation accuracy.
+`train.py` will generate a `train.ckpt`, which is the most recently saved model, and a `best.ckpt`, which is the model with the best validation FROC.
 
 
 # Testing
