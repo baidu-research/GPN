@@ -119,7 +119,7 @@ By default, `train.py` use 1 GPU (GPU_0) to train model, 1 processes to load ima
 tensorboard --logdir /SAVE_PATH/
 ```
 ![training_acc](/doc/training_FROC.png)
-Typically, you will observe the GPN model with KL-divergence loss consistently achieves higher training FROC than the RPN model with SmoothedL1 loss.
+Typically, you will observe the GPN model with KL-divergence loss achieves higher training FROC than the RPN model with SmoothedL1 loss.
 
 `train.py` will generate a `train.ckpt`, which is the most recently saved model, and a `best.ckpt`, which is the model with the best validation accuracy.
 
@@ -127,7 +127,7 @@ Typically, you will observe the GPN model with KL-divergence loss consistently a
 # Testing
 We can evaluate the average FROC score of lesion localization by
 ```
-python NCRF/wsi/bin/Evaluation_FROC.py /SAVE_PATH/
+python GPN/bin/test.py /SAVE_PATH/
 ```
 `/SAVE_PATH/` is where you saved your model. It will use the `best.ckpt` to compute the averge FROC score on the official test split of the DeepLesion dataset.
 
