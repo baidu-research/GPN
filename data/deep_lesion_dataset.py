@@ -1,3 +1,8 @@
+# --------------------------------------------------------
+# This code is mostly adopted from
+# https://github.com/rsummers11/CADLab/tree/master/lesion_detector_3DCE
+# --------------------------------------------------------
+
 import os
 from csv import reader
 
