@@ -11,9 +11,9 @@
 # GPN
 This repository contains the code and data to reproduce the main results from the paper:
 
-[Yi Li. Detecting Lesion Bounding Ellipses With Gaussian Proposal Networks, 2018.]()
+[Yi Li. Detecting Lesion Bounding Ellipses With Gaussian Proposal Networks, 2019.]()
 
-If you find the code/data is useful, please cite the above paper. If you have any quesions, please post it on github issues or email at liyi17@baidu.com, yil8@uci.edu
+If you find the code is useful, please cite the above paper. If you have any quesions, please post it on github issues or email at liyi17@baidu.com, yil8@uci.edu
 
 
 # Prerequisites
